@@ -18,3 +18,8 @@
   --text-size: 18px;
   --content-padding: 10px;
 }
+
+@media (width >= 588px) {
+  :root {
+    --content-padding: 20px;
+  }

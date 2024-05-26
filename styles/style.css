@@ -168,7 +168,7 @@
 /* Стилизация ссылки */
 
 .text-link {
-  text-shadow: 2px 2px 0 var(--decor-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--decor-color, #FF0070);
   text-decoration: none;
 }
 
@@ -221,7 +221,7 @@
 }
 
 .text-link:hover {
-  border-block-end: 1px solid var(--title-color, #FF0070);
+  border-block-end: 1px solid var(--text-color, #F1B2CE);
   cursor: pointer;
 }
 
@@ -230,16 +230,13 @@
 }
 
 .text-link:focus-visible {
-  outline: 1px solid var(--title-color, #FF0070);
+  outline: 1px solid var(--text-color, #F1B2CE);
   outline-offset: -1px;
 }
 
 /* Медиазапрос для стилизации и раскладки под планшеты --------------------- */
 
 @media (width >= 588px) {
-  :root {
-    --content-padding: 20px;
-  }
   
   .header,
   .footer {
@@ -271,18 +268,18 @@
     padding-block: 60px;
   }
 
-  .section__why {
+  .section-why {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
-  .section__what .section-title {
+  .section-what .section-title {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .section__how {
+  .section-how {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -327,12 +324,12 @@
     line-height: 129.5px;
   }
 
-  .section__what .section-content {
+  .section-what .section-content {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section__why,
-  .section__how {
+  .section-why,
+  .section-how {
     grid-template-columns: 1fr 2fr;
   }
 }
